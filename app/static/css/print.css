@@ -1,0 +1,9 @@
+/*
+    定义打印模块页面的样式表
+*/
+
+@media print {
+    .noprint {
+        display: none;
+    }
+}
