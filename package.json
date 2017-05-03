@@ -2,9 +2,8 @@
   "name": "sincerp",
   "version": "1.0.0",
   "description": "星科ERP系统",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
-    "start": "electron .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
