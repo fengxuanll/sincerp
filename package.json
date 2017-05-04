@@ -4,6 +4,7 @@
   "description": "星科ERP系统",
   "main": "main.js",
   "scripts": {
+    "start": "electron .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -12,6 +13,11 @@
   "author": "fengxuanll",
   "license": "ISC",
   "dependencies": {
-
+    "sqlite3": "^3.1.8",
+    "vue": "^2.3.2"
+  },
+  "devDependencies": {
+    "electron-packager": "^8.7.0",
+    "electron-prebuilt": "^1.4.13"
   }
 }
