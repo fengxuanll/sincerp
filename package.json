@@ -13,6 +13,7 @@
   "author": "fengxuanll",
   "license": "ISC",
   "dependencies": {
+    "jquery": "^3.2.1",
     "sqlite3": "^3.1.8",
     "vue": "^2.3.2"
   },

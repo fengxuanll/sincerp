@@ -1,3 +1,7 @@
+$(function () {
+    document.getElementById("loginName").focus();
+});
+
 var $vm = new Vue({
     el: "#app",
     data: {
@@ -6,7 +10,11 @@ var $vm = new Vue({
     },
     methods: {
         loginFn: function () {
-            alert(this.loginName);
+            var db = new sqlite3.Database("/db/sincerp.sqlite3", function () {
+                db.all("select * from user where loginName = ? and passWord = ?", [this.loginName, this.passWord], function (err, row) {
+                    alert(row.id);
+                })
+            });
         }
     }
 });

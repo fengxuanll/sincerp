@@ -27,7 +27,7 @@ function initialize() {
         // }
 
         mainWindow = new BrowserWindow(windowOptions);
-        mainWindow.loadURL(path.join('file://', __dirname, '/app/views/index.html'));
+        mainWindow.loadURL(path.join('file://', __dirname, '/app/views/login.html'));
 
         // 打开开发者工具
         // mainWindow.openDevTools();
