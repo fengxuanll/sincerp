@@ -1,0 +1,9 @@
+#app {
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 17%;
+}
+
+.layui-inline{
+    width: 350px;
+}
