@@ -17,7 +17,7 @@ var $vm = new Vue({
             // });
 
             var sequelize = new Sequelize('sincerp', null, null, {
-                host: 'localhost',
+                // host: 'localhost',
                 dialect: 'sqlite',
                 pool: {
                     max: 20,

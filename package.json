@@ -13,6 +13,9 @@
   "author": "fengxuanll",
   "license": "ISC",
   "dependencies": {
+    "electron-prebuilt": "^1.4.13",
+    "electron-rebuild": "^1.5.10",
+    "electron-sqlite": "^0.0.1",
     "jquery": "^3.2.1",
     "sequelize": "^3.30.4",
     "sqlite3": "^3.1.8",
