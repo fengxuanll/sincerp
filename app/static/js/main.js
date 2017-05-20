@@ -1,5 +1,7 @@
+var Trilogy = require("trilogy");
 // 把一些公用的库放到这里来引用
 var $ = require("jquery");
-var sqlite3 = require("sqlite3");
-var Sequelize = require("sequelize");
 
+const db = new Trilogy('./app/db/sincerp.sqlite3', {
+  client: 'sql.js'
+});

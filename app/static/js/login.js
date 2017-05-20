@@ -1,6 +1,4 @@
-import {
-    UserService
-} from "../service/userservice";
+// var UserService = require("../service/userservice");
 
 $(function () {
     document.getElementById("loginName").focus();
@@ -14,6 +12,25 @@ var $vm = new Vue({
     },
     methods: {
         loginFn: function () {
+            let user = db.model('user', {
+                loginName: String, // type shorthand
+                passWord: String,
+                status: Number,
+                id: 'increments' // special type
+            });
+            user.create({
+                    loginName: this.loginName,
+                    passWord: this.passWord,
+                    status: 1
+                })
+                .then(function () {
+                    let overwatch = user.findOne({
+                        loginName: this.loginName
+                    });
+                    console.log(overwatch.status)
+                });
+            return;
+
             this.loginName = $.trim(this.loginName);
             if (this.loginName == "") {
                 document.getElementById("loginName").focus();
@@ -26,8 +43,8 @@ var $vm = new Vue({
                 return;
             }
 
-            var userService = new UserService();
-            alert(userService.GetUser().Id);
+            // var userService = new UserService();
+            // alert(userService.GetUser().Id);
         }
     }
 });

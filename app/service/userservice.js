@@ -1,12 +1,10 @@
-import {
-    User
-} from "../domain/user";
+var User = require("../domain/user");
 
 export default class UserService {
     constructor() {}
 
     GetUser(loginName, passWord) {
-        var model = new user();
+        var model = new User();
         model.LoginName = loginName;
         model.PassWord = passWord;
     }

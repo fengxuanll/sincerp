@@ -16,9 +16,11 @@
     "electron-prebuilt": "^1.4.13",
     "electron-rebuild": "^1.5.10",
     "jquery": "^3.2.1",
+    "mdui": "^0.2.1",
     "node-uuid": "^1.4.8",
     "sequelize": "^3.30.4",
-    "sqlite3": "^3.1.8",
+    "sql.js": "^0.4.0",
+    "trilogy": "^1.1.0",
     "vue": "^2.3.2"
   },
   "devDependencies": {

@@ -1,11 +1,10 @@
 const path = require('path');
-var electron = require("electron");
 // 控制应用生命周期的模块。
 // 创建原生浏览器窗口的模块
 var {
     app,
     BrowserWindow
-} = electron;
+} = require("electron");
 
 var mainWindow = null
 
