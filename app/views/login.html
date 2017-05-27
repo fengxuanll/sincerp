@@ -9,26 +9,27 @@
     <link rel="stylesheet" href="../static/css/main.css" type="text/css" />
     <link rel="stylesheet" href="../static/css/login.css" type="text/css" />
     <link rel="stylesheet" href="../static/js/layui/css/layui.css" type="text/css" />
+    <link rel="stylesheet" href="../static/js/mdui/css/mdui.min.css" type="text/css" />
     <script type="text/javascript" src="../static/js/main.js"></script>
 </head>
 
 <body>
     <form class="layui-form">
-        <div id="app" v-on:keyup.enter="loginFn">
+        <div id="app">
             <div class="layui-form-item">
                 <label class="layui-form-label">用户名：</label>
                 <div class="layui-inline">
-                    <input type="text" id="loginName" v-model="loginName" class="layui-input" placeholder="用户名" />
+                    <input type="text" id="loginName" v-model="loginName" lay-verify="required" class="layui-input" placeholder="用户名" />
                 </div>
             </div>
             <div class="layui-form-item">
                 <label class="layui-form-label">密 码：</label>
                 <div class="layui-inline">
-                    <input type="password" id="passWord" v-model="passWord" class="layui-input" placeholder="密 码" />
+                    <input type="password" id="passWord" v-model="passWord" lay-verify="required" class="layui-input" placeholder="密 码" />
                 </div>
             </div>
             <div class="layui-form-item" style="text-align: center;">
-                <button type="button" class="layui-btn" v-on:click="loginFn">登录</button>
+                <button type="submit" class="layui-btn" lay-submit lay-filter="login">登&nbsp;&nbsp;&nbsp;&nbsp;录</button>
             </div>
         </div>
     </form>

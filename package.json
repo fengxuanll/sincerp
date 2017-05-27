@@ -5,7 +5,7 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel app -d dist"
   },
   "keywords": [
     "sincerp"
@@ -13,20 +13,25 @@
   "author": "fengxuanll",
   "license": "ISC",
   "dependencies": {
-    "electron-prebuilt": "^1.4.13",
-    "electron-rebuild": "^1.5.10",
-    "jquery": "^3.2.1",
+    "babel-runtime": "^6.23.0",
     "mdui": "^0.2.1",
     "node-uuid": "^1.4.8",
-    "sequelize": "^3.30.4",
     "sql.js": "^0.4.0",
-    "trilogy": "^1.1.0",
     "vue": "^2.3.2"
   },
   "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.24.1",
+    "babel-plugin-transform-es2015-spread": "^6.8.0",
+    "babel-plugin-transform-object-rest-spread": "^6.8.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-register": "^6.24.1",
+    "babelify": "^7.3.0",
+    "browserify": "^13.0.1",
     "electron": "1.6.8",
     "electron-builder": "^17.3.1",
     "electron-packager": "^8.7.0",
-    "electron-prebuilt": "^1.4.13"
+    "electron-prebuilt": "^1.4.13",
+    "watchify": "^3.7.0"
   }
 }

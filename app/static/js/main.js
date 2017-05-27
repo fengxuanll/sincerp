@@ -1,7 +1,11 @@
-var Trilogy = require("trilogy");
-// 把一些公用的库放到这里来引用
-var $ = require("jquery");
+/*
+    引入公用的JS库
+*/
+require("babel-register");
 
-const db = new Trilogy('./app/db/sincerp.sqlite3', {
-  client: 'sql.js'
-});
+var sql = require("sql.js");
+
+require("mdui");
+var $$ = mdui.JQ;
+
+// require("babel-runtime");
