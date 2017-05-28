@@ -13,7 +13,6 @@
   "author": "fengxuanll",
   "license": "ISC",
   "dependencies": {
-    "babel-runtime": "^6.23.0",
     "mdui": "^0.2.1",
     "node-uuid": "^1.4.8",
     "sql.js": "^0.4.0",
@@ -22,6 +21,7 @@
   "devDependencies": {
     "babel": "^6.23.0",
     "babel-cli": "^6.24.1",
+    "babel-plugin-add-module-exports": "0.2.1",
     "babel-plugin-transform-es2015-spread": "^6.8.0",
     "babel-plugin-transform-object-rest-spread": "^6.8.0",
     "babel-preset-es2015": "^6.24.1",
